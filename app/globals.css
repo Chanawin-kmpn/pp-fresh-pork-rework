@@ -2,22 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-	--background: #ffffff;
-	--foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: #0a0a0a;
-		--foreground: #ededed;
-	}
-}
-
 body {
-	color: var(--foreground);
-	background: var(--background);
-	font-family: Arial, Helvetica, sans-serif;
+	@apply bg-primary;
 }
 
 @layer base {
@@ -42,19 +28,27 @@ body {
 	}
 
 	/* Text sizes */
-	.text-lg {
-		@apply text-mobile-text-lg font-normal lg:text-text-lg;
+	.text-large {
+		@apply text-mobile-text-lg lg:text-text-lg;
 	}
-	.text-md {
-		@apply text-mobile-text-md font-normal lg:text-text-md;
+	.text-medium {
+		@apply text-mobile-text-md lg:text-text-md;
 	}
-	.text-base {
-		@apply text-mobile-text-base font-normal lg:text-text-base;
+	.text-normal {
+		@apply text-mobile-text-base lg:text-text-base;
 	}
-	.text-sm {
-		@apply text-mobile-text-sm font-normal lg:text-text-sm;
+	.text-small {
+		@apply text-mobile-text-sm lg:text-text-sm;
 	}
-  :root {
+	:root {
 		--radius: 0.5rem;
+	}
+}
+
+@layer components {
+	.container {
+		@apply mx-auto bg-primary;
+		max-width: 1440px;
+		min-width: 375px;
 	}
 }

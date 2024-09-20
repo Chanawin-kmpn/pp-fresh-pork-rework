@@ -9,6 +9,9 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			fontFamily: {
+				sans: ['var(--font-noto-sans-thai)', 'var(--font-inter)', 'sans-serif'],
+			},
 			colors: {
 				primary: '#4A0000',
 				secondery: '#A81620',
@@ -52,5 +55,8 @@ const config: Config = {
 	},
 	// eslint-disable-next-line @typescript-eslint/no-require-imports
 	plugins: [require('tailwindcss-animate')],
+	corePlugins: {
+		container: false, // Disable the default container
+	},
 };
 export default config;
