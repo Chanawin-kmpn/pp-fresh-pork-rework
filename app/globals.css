@@ -3,52 +3,91 @@
 @tailwind utilities;
 
 body {
-	@apply bg-primary;
+  @apply cursor-default scroll-smooth bg-primary;
 }
 
 @layer base {
-	/* Headings */
-	h1 {
-		@apply text-mobile-h1 font-bold lg:text-h1;
-	}
-	h2 {
-		@apply text-mobile-h2 font-bold lg:text-h2;
-	}
-	h3 {
-		@apply text-mobile-h3 font-bold lg:text-h3;
-	}
-	h4 {
-		@apply text-mobile-h4 font-bold lg:text-h4;
-	}
-	h5 {
-		@apply text-mobile-h5 font-bold lg:text-h5;
-	}
-	h6 {
-		@apply text-mobile-h6 font-bold lg:text-h6;
-	}
+  /* Headings */
+  h1 {
+    @apply text-mobile-h1 font-bold lg:text-h1;
+  }
+  h2 {
+    @apply text-mobile-h2 font-bold lg:text-h2;
+  }
+  h3 {
+    @apply text-mobile-h3 font-bold lg:text-h3;
+  }
+  h4 {
+    @apply text-mobile-h4 font-bold lg:text-h4;
+  }
+  h5 {
+    @apply text-mobile-h5 font-bold lg:text-h5;
+  }
+  h6 {
+    @apply text-mobile-h6 font-bold lg:text-h6;
+  }
 
-	/* Text sizes */
-	.text-large {
-		@apply text-mobile-text-lg lg:text-text-lg;
-	}
-	.text-medium {
-		@apply text-mobile-text-md lg:text-text-md;
-	}
-	.text-normal {
-		@apply text-mobile-text-base lg:text-text-base;
-	}
-	.text-small {
-		@apply text-mobile-text-sm lg:text-text-sm;
-	}
-	:root {
-		--radius: 0.5rem;
-	}
+  /* Text sizes */
+  .text-large {
+    @apply text-mobile-text-lg lg:text-text-lg;
+  }
+  .text-medium {
+    @apply text-mobile-text-md lg:text-text-md;
+  }
+  .text-normal {
+    @apply text-mobile-text-base lg:text-text-base;
+  }
+  .text-small {
+    @apply text-mobile-text-sm lg:text-text-sm;
+  }
+
+  .text-large-bold {
+    @apply text-large font-bold;
+  }
+
+  .text-medium-bold {
+    @apply text-medium font-bold;
+  }
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+@layer utilities {
+  .bg-multi-image {
+    position: relative;
+  }
+  .bg-multi-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/assets/images/backgrounds/top-left-bg.png"),
+      url("/assets/images/backgrounds/top-right-bg.png"),
+      url("/assets/images/backgrounds/bottom-left-bg.png"),
+      url("/assets/images/backgrounds/bottom-right-bg.png");
+    background-position:
+      top left,
+      top right,
+      30% 70%,
+      75% 75%;
+    background-repeat: no-repeat;
+    background-size:
+      300px 300px,
+      250px 250px,
+      200px 200px,
+      360px 180px;
+    opacity: 0.2;
+    z-index: 1;
+  }
 }
 
 @layer components {
-	.container {
-		@apply mx-auto bg-primary;
-		max-width: 1440px;
-		min-width: 375px;
-	}
+  .container {
+    @apply mx-auto bg-primary;
+    max-width: 1440px;
+    min-width: 375px;
+  }
 }

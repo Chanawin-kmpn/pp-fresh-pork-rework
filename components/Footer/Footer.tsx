@@ -13,7 +13,7 @@ const Footer = () => {
           <Image
             src="/assets/images/logo/ppfreshpork-logo.png"
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="(max-width: 1024px) 125px, 160px"
             alt="PP Fresh pork Logo"
             priority
@@ -62,7 +62,7 @@ const Footer = () => {
       </div>
       <div className="w-full lg:flex-shrink-0">
         <hr className="bg-gray-600" />
-        <p className="mt-2 text-center text-gray-400">
+        <p className="mt-2 text-center text-gray-600">
           Copyright 2024 &copy; P.P. Fresh Pork{" "}
         </p>
       </div>
