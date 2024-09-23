@@ -30,6 +30,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="th">
+			<head>
+				<link rel="icon" href="/public/favicon.ico" />
+			</head>
 			<body
 				className={`container ${inter.variable} ${notoSansThai.variable} font-sans antialiased`}
 			>
