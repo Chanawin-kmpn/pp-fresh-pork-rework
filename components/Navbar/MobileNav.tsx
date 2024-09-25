@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,15 +11,19 @@ import Link from "next/link";
 import { navLink } from "@/constant";
 
 const MobileNav = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleLinkClick = () => {
-    setIsOpen(false);
-  };
+  const handleItemSelect = useCallback(() => {
+    setIsMenuOpen(false);
+  }, []);
+
   return (
     <div className="sm:hidden">
-      <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
-        <DropdownMenuTrigger aria-label="menu-button">
+      <DropdownMenu open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+        <DropdownMenuTrigger
+          aria-label="เปิด/ปิดเมนูมือถือ"
+          className="rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -35,13 +39,16 @@ const MobileNav = () => {
             />
           </svg>
         </DropdownMenuTrigger>
-        <DropdownMenuContent>
+        <DropdownMenuContent className="w-56" align="end">
           {navLink.map((link) => (
-            <DropdownMenuItem className="p-4" key={link.label}>
+            <DropdownMenuItem
+              key={link.label}
+              className="focus:text-primary-foreground p-0 focus:bg-primary"
+            >
               <Link
-                className="text-text-md"
-                onClick={handleLinkClick}
                 href={link.href}
+                className="hover:bg-muted text-medium block w-full p-4 transition-colors"
+                onClickCapture={handleItemSelect}
               >
                 {link.label}
               </Link>

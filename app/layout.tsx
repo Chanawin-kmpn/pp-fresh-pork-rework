@@ -39,7 +39,7 @@ export default function RootLayout({
         className={`container ${inter.variable} ${notoSansThai.variable} flex h-full min-h-screen flex-col gap-8 font-sans antialiased lg:gap-16`}
       >
         <Navbar />
-        <main className="flex-grow bg-white">{children}</main>
+        <main className="flex-grow rounded-lg bg-white">{children}</main>
         <Footer />
       </body>
     </html>

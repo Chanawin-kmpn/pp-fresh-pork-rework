@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import CertificationBadge from "./CertificationBadge";
 import { certificates } from "@/constant";
+import CertificationBadge from "./Badge/CertificationBadge";
 
 const Banner = () => {
   return (
