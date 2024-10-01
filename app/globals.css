@@ -48,6 +48,10 @@ body {
   .text-medium-bold {
     @apply text-medium font-bold;
   }
+
+  .text-normal-bold {
+    @apply text-normal font-bold;
+  }
   :root {
     --radius: 0.5rem;
   }
@@ -64,10 +68,10 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("/assets/images/backgrounds/top-left-bg.png"),
-      url("/assets/images/backgrounds/top-right-bg.png"),
-      url("/assets/images/backgrounds/bottom-left-bg.png"),
-      url("/assets/images/backgrounds/bottom-right-bg.png");
+    background-image: url("/assets/images/backgrounds/banner/top-left-bg.png"),
+      url("/assets/images/backgrounds/banner/top-right-bg.png"),
+      url("/assets/images/backgrounds/banner/bottom-left-bg.png"),
+      url("/assets/images/backgrounds/banner/bottom-right-bg.png");
     background-position:
       top left,
       top right,
@@ -80,6 +84,25 @@ body {
       200px 200px,
       360px 180px;
     opacity: 0.2;
+    z-index: 1;
+  }
+
+  .bg-card {
+    position: relative;
+  }
+
+  .bg-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/assets/images/backgrounds/card/top-right-card-bg.png"),
+      url("/assets/images/backgrounds/card/bottom-left-card-bg.png");
+    background-repeat: no-repeat;
+    background-position:
+      top right,
+      bottom left;
+    background-size: 50%;
+    opacity: 0.15;
     z-index: 1;
   }
 }

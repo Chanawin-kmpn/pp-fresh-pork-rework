@@ -16,7 +16,7 @@ const config: Config = {
         primary: "#4A0000",
         secondery: "#A81620",
         third: "#FFB20F",
-        grey: {
+        gray: {
           "100": "#E0E0E0",
           "200": "#BDBDBD",
           "300": "#828282",

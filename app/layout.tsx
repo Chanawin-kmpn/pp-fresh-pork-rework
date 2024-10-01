@@ -36,7 +36,7 @@ export default function RootLayout({
         <meta name="description" content={metadata.description} />
       </head>
       <body
-        className={`container ${inter.variable} ${notoSansThai.variable} flex h-full min-h-screen flex-col gap-8 font-sans antialiased lg:gap-16`}
+        className={`container ${inter.variable} ${notoSansThai.variable} flex h-full min-h-screen flex-col gap-8 overflow-scroll font-sans antialiased lg:gap-16`}
       >
         <Navbar />
         <main className="flex-grow rounded-lg bg-white">{children}</main>
