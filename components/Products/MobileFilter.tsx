@@ -1,5 +1,6 @@
+"use client";
 import { ProductFilterProps } from "@/types/types";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Drawer,
   DrawerContent,
@@ -15,8 +16,14 @@ const MobileFilter: React.FC<ProductFilterProps> = ({
   selectedTypes,
   handleTypeChange,
 }) => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [selectedTypes]);
+
   return (
-    <Drawer>
+    <Drawer open={isOpen} onOpenChange={setIsOpen}>
       <DrawerTrigger className="text-normal-bold flex items-center gap-2 rounded-full bg-third px-4 py-2 text-white lg:hidden">
         ตัวกรอง
         <span>
@@ -36,15 +43,15 @@ const MobileFilter: React.FC<ProductFilterProps> = ({
           </svg>
         </span>
       </DrawerTrigger>
-      <DrawerContent>
+      <DrawerContent className="p-8">
         <DrawerHeader className="hidden">
           <DrawerTitle>Are you absolutely sure?</DrawerTitle>
           <DrawerDescription>This action cannot be undone.</DrawerDescription>
         </DrawerHeader>
         {Object.entries(categories).map(([category, types]) => (
-          <div key={category} className="mb-4">
-            <p className="text-large-bold mb-2">{category}</p>
-            <div className="space-y-2">
+          <div key={category} className="mt-4 flex flex-col gap-2">
+            <p className="text-large-bold mb-2 text-primary">{category}</p>
+            <div className="mb-4 grid grid-cols-2 justify-center gap-4">
               {types.map((type: string) => (
                 <div key={type}>
                   <label
@@ -61,6 +68,7 @@ const MobileFilter: React.FC<ProductFilterProps> = ({
                 </div>
               ))}
             </div>
+            <hr />
           </div>
         ))}
       </DrawerContent>

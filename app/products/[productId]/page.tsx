@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Product } from "@/types/types";
 import productData from "@/data/product.json";
+import Image from "next/image";
 
 export default function ProductDetail() {
   const params = useParams();
@@ -27,12 +28,29 @@ export default function ProductDetail() {
   }
 
   return (
-    <div>
-      <h1>{product.product_name}</h1>
-      <p>{product.description}</p>
-      <p>ราคา: {product.price} บาท</p>
-      <p>น้ำหนัก: {product.product_size} กรัม</p>
-      {/* Add more product details as needed */}
+    <div className="flex flex-col gap-4 px-8 py-4 lg:flex-row lg:gap-8 lg:px-40 lg:py-16">
+      <div className="relative h-[468px] w-full lg:flex-1">
+        <Image
+          src={product.product_image}
+          fill
+          alt={`${product.product_name} Image`}
+        />
+      </div>
+      <div className="flex flex-col gap-4 lg:flex-1">
+        <div className="space-y-2">
+          <h4 className="text-primary">{product.product_name}</h4>
+          <p className="text-normal">{product.description}</p>
+        </div>
+        <div className="space-y-2">
+          <h5 className="text-primary">ขนาดผลิตภัณฑ์</h5>
+          <p className="text-normal">น้ำหนัก {product.product_size} กรัม</p>
+        </div>
+        <div>
+          <p className="text-medium-bold text-primary">
+            ราคา {product.price} บาท
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
