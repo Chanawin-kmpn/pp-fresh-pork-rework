@@ -1,7 +1,7 @@
 "use client";
-import React, { useState, useMemo, useEffect, createContext } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import productData from "@/data/product.json";
-import { Products, Category, Product, ProductProp } from "@/types/types";
+import { Products, Category, Product } from "@/types/types";
 import ProductFilter from "@/components/Products/ProductFilter";
 import ProductDisplay from "@/components/Products/ProductDisplay";
 import { ProductContext } from "@/context/ProductContext";

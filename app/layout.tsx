@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
+// eslint-disable-next-line camelcase
 import { Inter, Noto_Sans_Thai } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/shared/Footer/Footer";
 import Navbar from "@/components/shared/Navbar/Navbar";
+import React from "react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,7 +40,7 @@ export default function RootLayout({
         className={`container ${inter.variable} ${notoSansThai.variable} flex h-full min-h-screen flex-col gap-8 overflow-scroll font-sans antialiased lg:gap-16`}
       >
         <Navbar />
-        <main className="flex-grow rounded-lg bg-white">{children}</main>
+        <main className="grow rounded-lg bg-white">{children}</main>
         <Footer />
       </body>
     </html>

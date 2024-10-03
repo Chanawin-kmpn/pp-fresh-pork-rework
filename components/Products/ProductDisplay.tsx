@@ -1,4 +1,4 @@
-import { Product, ProductProp } from "@/types/types";
+import { Product } from "@/types/types";
 import React from "react";
 import ProductCard from "./ProductCard";
 
