@@ -9,9 +9,9 @@ import React from "react";
 const contactMethods = [
   {
     icon: <MapPinIcon className="size-6 text-red-500" />,
-    title: "บริษัท พี.พี. เฟรชพอร์ค",
+    title: "บริษัท พี.พี. เฟรชพอร์ค จำกัด",
     description:
-      "จำกัด 98/6 หมู่ 5 ซอย ราษฏร์สามัคคี 3 ตำบล ท่าข้าม อำเภอ สามพราน จังหวัด นครปฐม 73110",
+      "98/6 หมู่ 5 ซอย ราษฏร์สามัคคี 3 ตำบล ท่าข้าม อำเภอ สามพราน จังหวัด นครปฐม 73110",
   },
   {
     icon: <ChatBubbleLeftRightIcon className="size-6 text-blue-500" />,
@@ -39,7 +39,7 @@ const ContactMethodCard = () => {
           <div
             className={clsx("inline-block rounded-full p-4", {
               "bg-blue-200": method.title === "ส่งข้อความ",
-              "bg-red-200": method.title === "บริษัท พี.พี. เฟรชพอร์ค",
+              "bg-red-200": method.title === "บริษัท พี.พี. เฟรชพอร์ค จำกัด",
               "bg-green-200": method.title === "เบอร์โทรศัพท์",
               "bg-purple-200": method.title === "อีเมล",
             })}
