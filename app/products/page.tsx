@@ -6,7 +6,7 @@ import ProductFilter from "@/components/Products/ProductFilter";
 import ProductDisplay from "@/components/Products/ProductDisplay";
 import { ProductContext } from "@/context/ProductContext";
 
-const page = () => {
+const Page = () => {
   const [selectedTypes, setSelectedTypes] = useState<string>("");
   const [productItems, setProductItems] = useState<Product[]>(
     (productData as Products).products.flatMap((category) =>
@@ -64,4 +64,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
