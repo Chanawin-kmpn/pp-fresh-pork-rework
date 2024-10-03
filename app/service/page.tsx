@@ -25,36 +25,36 @@ const page = () => {
             ที่สามารถตอบสนองความต้องการของลูกค้าได้อย่างครบวงจร
           </p>
           <ul className="grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-4">
-            <li className="space-y-2 rounded-lg border p-4 shadow-md">
+            <li className="space-y-2 rounded-lg border p-4 shadow-md transition-shadow hover:shadow-lg">
               <span className="text-medium-bold">ผลิตภัณฑ์แปรรูปหลากหลาย:</span>
-              <p className="text-normal">
+              <p className="text-normal text-gray-300">
                 ตั้งแต่กลุ่มหมูหมัก เนื้อหมัก ไก่หมักหลากหลายรสชาติ
                 เบคอนคุณภาพพรีเมี่ยม ที่มีทั้งสูตรหมูขุนและสูตรแม่พันธุ์
                 ให้คุณเลือกตามความต้องการ
                 ไปจนถึงกลุ่มหมูสไลด์สำหรับหมูกระทะและหมูชาบู
               </p>
             </li>
-            <li className="space-y-2 rounded-lg border p-4 shadow-md">
+            <li className="space-y-2 rounded-lg border p-4 shadow-md transition-shadow hover:shadow-lg">
               <span className="text-medium-bold">สินค้าพันม้วนแร๊ป:</span>
-              <p className="text-normal">
+              <p className="text-normal text-gray-300">
                 ชิ้นส่วนเนื้อแดงพันม้วนแร๊ป เพื่อนำไปแปรรูป
               </p>
             </li>
-            <li className="space-y-2 rounded-lg border p-4 shadow-md">
+            <li className="space-y-2 rounded-lg border p-4 shadow-md transition-shadow hover:shadow-lg">
               <span className="text-medium-bold">บริการ OEM:</span>
-              <p className="text-normal">
+              <p className="text-normal text-gray-300">
                 รับผลิตสินค้าตามความต้องการเฉพาะของลูกค้า
               </p>
             </li>
-            <li className="space-y-2 rounded-lg border p-4 shadow-md">
+            <li className="space-y-2 rounded-lg border p-4 shadow-md transition-shadow hover:shadow-lg">
               <span className="text-medium-bold">มาตรฐานระดับสากล:</span>
-              <p className="text-normal">
+              <p className="text-normal text-gray-300">
                 ได้รับการรับรองมาตรฐาน อย., GMP และ HACCP
                 รับประกันคุณภาพและความปลอดภัย
               </p>
             </li>
           </ul>
-          <p className="text-normal">
+          <p className="text-normal text-gray-300">
             ด้วยกระบวนการผลิตที่ทันสมัย ได้มาตรฐาน และใส่ใจในทุกขั้นตอน
             เราพร้อมส่งมอบผลิตภัณฑ์ที่สะอาด สะดวก รวดเร็ว และถูกสุขอนามัย
             เหมาะสำหรับการบริโภคในทุกรูปแบบ
