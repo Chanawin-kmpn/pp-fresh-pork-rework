@@ -1,5 +1,4 @@
 import React from "react";
-import { Checkbox } from "../ui/checkbox";
 import DesktopFilter from "./DesktopFilter";
 import MobileFilter from "./MobileFilter";
 import { ProductFilterProps } from "@/types/types";
