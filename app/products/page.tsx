@@ -4,8 +4,7 @@ import productData from "@/data/product.json";
 import { Products, Category, Product, ProductProp } from "@/types/types";
 import ProductFilter from "@/components/Products/ProductFilter";
 import ProductDisplay from "@/components/Products/ProductDisplay";
-
-export const ProductContext = createContext<Product[]>([]);
+import { ProductContext } from "@/context/ProductContext";
 
 const page = () => {
   const [selectedTypes, setSelectedTypes] = useState<string>("");
