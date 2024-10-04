@@ -14,7 +14,7 @@ const page = () => {
             className="object-contain"
           />
         </div>
-        <h4 className="text-center text-primary">บริการของเรา</h4>
+        <p className="text-subtitle text-center text-primary">บริการของเรา</p>
         <div className="flex flex-col gap-4">
           <p className="">
             บริษัท พี.พี. เฟรชพอร์ค จำกัด
@@ -61,7 +61,9 @@ const page = () => {
           </p>
         </div>
         <div className="mx-auto space-y-4 text-center">
-          <h5 className="text-primary">สนใจผลิตภัณฑ์หรือบริการของเรา?</h5>
+          <p className="text-subtitle text-primary">
+            สนใจผลิตภัณฑ์หรือบริการของเรา?
+          </p>
           <p className="text-medium">
             เรายินดีต้อนรับทุกท่านที่สนใจเยี่ยมชมโรงงานหรือต้องการข้อมูลเพิ่มเติม
           </p>

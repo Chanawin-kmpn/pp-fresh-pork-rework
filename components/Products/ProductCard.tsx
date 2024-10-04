@@ -18,9 +18,7 @@ const ProductCard: React.FC<ProductProp> = ({ product }) => {
       </div>
       <div className="bg-card p-2">
         <div className="flex flex-col gap-2">
-          <h3 className="text-large-bold text-primary">
-            {product.product_name}
-          </h3>
+          <p className="text-large-bold text-primary">{product.product_name}</p>
           <p className="text-normal mt-2 line-clamp-1 lg:line-clamp-2">
             {product.description}
           </p>

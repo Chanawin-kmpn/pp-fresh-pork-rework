@@ -12,13 +12,13 @@ const DesktopFIlter: React.FC<ProductFilterProps> = ({
     <div className="hidden lg:block">
       {Object.entries(categories).map(([category, types]) => (
         <div key={category} className="mb-4">
-          <p className="text-large-bold mb-2">{category}</p>
+          <p className="text-medium-bold mb-2">{category}</p>
           <div className="space-y-2">
             {types.map((type: string) => (
               <div key={type}>
                 <label
                   htmlFor={type}
-                  className="text-medium flex items-center gap-2"
+                  className="text-normal flex items-center gap-2"
                 >
                   <Checkbox
                     id={type}

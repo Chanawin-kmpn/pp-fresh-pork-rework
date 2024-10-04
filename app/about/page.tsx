@@ -14,7 +14,9 @@ const page = () => {
           />
         </div>
         <div className="flex-1 space-y-4">
-          <h4 className="text-primary">บริษัท พี.พี. เฟรชพอร์ค จำกัด</h4>
+          <p className="text-subtitle text-primary">
+            บริษัท พี.พี. เฟรชพอร์ค จำกัด
+          </p>
           <p className="text-normal">
             ก่อตั้งขึ้นในปี 2562 บริษัท พี.พี. เฟรชพอร์ค จำกัด
             เป็นผู้นำในการผลิตและจำหน่ายผลิตภัณฑ์แปรรูปจากเนื้อสัตว์คุณภาพสูง
@@ -25,7 +27,7 @@ const page = () => {
       </div>
       <div className="flex flex-col items-center gap-8">
         <div className="flex-1 space-y-4">
-          <h4 className="text-primary">ทำไมต้องเลือกเรา</h4>
+          <p className="text-subtitle text-primary">ทำไมต้องเลือกเรา</p>
           <ol className="grid grid-cols-1 gap-4 lg:grid-cols-2">
             <li className="space-y-2 rounded-lg border p-4 shadow-md transition-shadow hover:shadow-lg">
               <span className="text-medium-bold">

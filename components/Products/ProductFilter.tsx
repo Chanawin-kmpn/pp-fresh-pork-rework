@@ -15,7 +15,7 @@ const ProductFilter: React.FC<ProductFilterProps> = ({
 
   return (
     <div className="flex items-center justify-between lg:flex-col lg:items-start lg:gap-8">
-      <h5 className="text-primary">ประเภทสินค้า</h5>
+      <p className="text-large-bold text-primary">ประเภทสินค้า</p>
       <DesktopFilter
         categories={categories}
         selectedTypes={selectedTypes}

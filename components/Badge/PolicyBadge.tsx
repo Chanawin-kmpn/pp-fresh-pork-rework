@@ -15,13 +15,13 @@ const iconColorMap: Record<string, string> = {
 const PolicyBadge = ({ icon, title, desc }: Initiative) => {
   const iconColor = iconColorMap[icon] || "text-gray-600";
   return (
-    <div className="flex flex-col items-center rounded-lg bg-gray-100 p-6 shadow-lg">
+    <div className="flex flex-col items-center rounded-lg border p-6 shadow-md transition-shadow hover:shadow-lg">
       <Icon
         icon={`material-symbols:${icon}-outline`}
         className={cn("size-10", iconColor)}
       />
-      <h3 className="mt-4 text-lg font-medium text-gray-900">{title}</h3>
-      <p className="mt-2 text-center text-base text-gray-500">{desc}</p>
+      <p className="text-large-bold mt-4 text-gray-900">{title}</p>
+      <p className="text-normal mt-2 text-center text-gray-400">{desc}</p>
     </div>
   );
 };

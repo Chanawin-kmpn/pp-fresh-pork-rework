@@ -11,13 +11,13 @@ body {
   h1 {
     @apply text-mobile-h1 font-bold lg:text-h1;
   }
-  h2 {
+  .text-subbanner {
     @apply text-mobile-h2 font-bold lg:text-h2;
   }
-  h3 {
+  /* .text-product_name_card {
     @apply text-mobile-h3 font-bold lg:text-h3;
-  }
-  h4 {
+  } */
+  .text-subtitle {
     @apply text-mobile-h4 font-bold lg:text-h4;
   }
   h5 {

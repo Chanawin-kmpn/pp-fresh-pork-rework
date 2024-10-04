@@ -44,11 +44,11 @@ export default function ProductDetail() {
         </div>
         <div className="flex flex-col gap-4 lg:flex-1">
           <div className="space-y-2">
-            <h4 className="text-primary">{product.product_name}</h4>
+            <p className="text-subtitle text-primary">{product.product_name}</p>
             <p className="text-normal">{product.description}</p>
           </div>
           <div className="space-y-2">
-            <h5 className="text-primary">ขนาดผลิตภัณฑ์</h5>
+            <p className="text-large-bold text-primary">ขนาดผลิตภัณฑ์</p>
             <p className="text-normal">น้ำหนัก {product.product_size} กรัม</p>
           </div>
           <div>
