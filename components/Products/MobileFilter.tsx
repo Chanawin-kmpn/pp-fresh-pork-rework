@@ -24,7 +24,7 @@ const MobileFilter: React.FC<ProductFilterProps> = ({
 
   return (
     <Drawer open={isOpen} onOpenChange={setIsOpen}>
-      <DrawerTrigger className="text-normal-bold flex items-center gap-2 rounded-full bg-third px-4 py-2 text-white lg:hidden">
+      <DrawerTrigger className="text-normal-bold flex items-center gap-2 rounded-full bg-secondery px-4 py-2 text-white lg:hidden">
         ตัวกรอง
         <span>
           <svg
@@ -62,6 +62,7 @@ const MobileFilter: React.FC<ProductFilterProps> = ({
                       id={type}
                       checked={selectedTypes === type}
                       onCheckedChange={() => handleTypeChange!(type)}
+                      aria-label={`${type} filter`}
                     />
                     {type}
                   </label>

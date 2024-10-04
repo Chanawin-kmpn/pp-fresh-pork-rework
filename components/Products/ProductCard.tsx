@@ -22,7 +22,7 @@ const ProductCard: React.FC<ProductProp> = ({ product }) => {
           <p className="text-normal mt-2 line-clamp-1 lg:line-clamp-2">
             {product.description}
           </p>
-          <p className="text-gray-300">น้ำหนัก {product.product_size} กรัม</p>
+          <p className="text-gray-400">น้ำหนัก {product.product_size} กรัม</p>
           <div className="flex items-center justify-between">
             <p className="text-normal-bold mt-2 text-primary">
               {product.price} บาท

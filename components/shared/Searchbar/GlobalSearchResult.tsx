@@ -20,7 +20,7 @@ const GlobalSearchResult: React.FC<GlobalSearchResultProps> = ({
     <div className="absolute mt-2 w-full rounded-md bg-white p-4 shadow-lg">
       <p className="text-large-bold">
         สินค้า:{" "}
-        <span className="text-medium-bold text-gray-300">
+        <span className="text-medium-bold text-gray-400">
           ({products.length})
         </span>
       </p>

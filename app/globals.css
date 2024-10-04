@@ -68,10 +68,10 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("/assets/images/backgrounds/banner/top-left-bg.png"),
-      url("/assets/images/backgrounds/banner/top-right-bg.png"),
-      url("/assets/images/backgrounds/banner/bottom-left-bg.png"),
-      url("/assets/images/backgrounds/banner/bottom-right-bg.png");
+    background-image: url("/assets/images/backgrounds/banner/top-left-bg.webp"),
+      url("/assets/images/backgrounds/banner/top-right-bg.webp"),
+      url("/assets/images/backgrounds/banner/bottom-left-bg.webp"),
+      url("/assets/images/backgrounds/banner/bottom-right-bg.webp");
     background-position:
       top left,
       top right,
@@ -95,8 +95,8 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("/assets/images/backgrounds/card/top-right-card-bg.png"),
-      url("/assets/images/backgrounds/card/bottom-left-card-bg.png");
+    background-image: url("/assets/images/backgrounds/card/top-right-card-bg.webp"),
+      url("/assets/images/backgrounds/card/bottom-left-card-bg.webp");
     background-repeat: no-repeat;
     background-position:
       top right,

@@ -11,7 +11,7 @@ const Footer = () => {
           className="relative h-[90px] w-[125px] shrink-0 lg:h-[115px] lg:w-[160px]"
         >
           <Image
-            src="/assets/images/logo/ppfreshpork-logo.png"
+            src="/assets/images/logo/ppfreshpork-logo.webp"
             fill
             className="object-contain"
             sizes="(max-width: 1024px) 125px, 160px"

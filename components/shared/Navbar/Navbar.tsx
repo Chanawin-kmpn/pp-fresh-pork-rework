@@ -14,7 +14,7 @@ const Navbar = () => {
           className="relative block h-[90px] w-[125px] lg:h-[115px] lg:w-[160px]"
         >
           <Image
-            src="/assets/images/logo/ppfreshpork-logo.png"
+            src="/assets/images/logo/ppfreshpork-logo.webp"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 125px, 160px"

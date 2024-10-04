@@ -47,7 +47,7 @@ const Page = () => {
   }, [selectedTypes]);
 
   return (
-    <div className="flex flex-col gap-4 px-4 py-8 lg:flex-row lg:gap-8 lg:px-20 lg:py-12 xl:px-40 xl:py-16">
+    <div className="flex flex-col gap-4 px-4 py-8 md:px-20 md:py-12 lg:flex-row lg:gap-8 xl:px-40 xl:py-16">
       <aside className="lg:w-1/4 lg:max-w-[256px]">
         <ProductFilter
           categories={productCategories}

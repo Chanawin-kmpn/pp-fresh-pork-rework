@@ -33,21 +33,21 @@ const page = () => {
               <span className="text-medium-bold">
                 ความหลากหลายของผลิตภัณฑ์:
               </span>
-              <p className="text-normal text-gray-300">
+              <p className="text-normal text-gray-400">
                 เรามีสินค้าที่ครอบคลุมทุกความต้องการ
                 ตั้งแต่เนื้อหมักพร้อมปรุงไปจนถึงเนื้อสไลด์สำหรับร้านอาหาร
               </p>
             </li>
             <li className="space-y-2 rounded-lg border p-4 shadow-md transition-shadow hover:shadow-lg">
               <span className="text-medium-bold">คุณภาพระดับพรีเมียม:</span>
-              <p className="text-normal text-gray-300">
+              <p className="text-normal text-gray-400">
                 ด้วยการรับรองมาตรฐานระดับสากล
                 เราการันตีคุณภาพและความปลอดภัยของทุกผลิตภัณฑ์
               </p>
             </li>
             <li className="space-y-2 rounded-lg border p-4 shadow-md transition-shadow hover:shadow-lg">
               <span className="text-medium-bold">นวัตกรรมการผลิต:</span>
-              <p className="text-normal text-gray-300">
+              <p className="text-normal text-gray-400">
                 เราใช้เครื่องจักรที่ทันสมัยในกระบวนการผลิต
                 ทำให้ได้ผลิตภัณฑ์ที่มีคุณภาพสม่ำเสมอและปลอดภัย
               </p>
@@ -56,13 +56,13 @@ const page = () => {
               <span className="text-medium-bold">
                 ความยืดหยุ่นในการให้บริการ:
               </span>
-              <p className="text-normal text-gray-300">
+              <p className="text-normal text-gray-400">
                 ด้วยบริการ OEM เราสามารถตอบสนองความต้องการเฉพาะของลูกค้าแต่ละราย
               </p>
             </li>
             <li className="space-y-2 rounded-lg border p-4 shadow-md transition-shadow hover:shadow-lg">
               <span className="text-medium-bold">ความโปร่งใส:</span>
-              <p className="text-normal text-gray-300">
+              <p className="text-normal text-gray-400">
                 เรายินดีให้ลูกค้าเยี่ยมชมโรงงาน
                 แสดงถึงความมั่นใจในกระบวนการผลิตของเรา
               </p>
@@ -71,7 +71,7 @@ const page = () => {
               <span className="text-medium-bold">
                 ประสบการณ์และความเชี่ยวชาญ:
               </span>
-              <p className="text-normal text-gray-300">
+              <p className="text-normal text-gray-400">
                 แม้จะเป็นบริษัทที่ก่อตั้งในปี 2562
                 แต่เราได้สั่งสมความเชี่ยวชาญในอุตสาหกรรมอาหารแปรรูป
                 ทำให้เราเข้าใจความต้องการของตลาดเป็นอย่างดี
@@ -81,7 +81,7 @@ const page = () => {
               <span className="text-medium-bold">
                 การส่งมอบที่รวดเร็วและตรงเวลา:
               </span>
-              <p className="text-normal text-gray-300">
+              <p className="text-normal text-gray-400">
                 เรามุ่งมั่นในการส่งมอบผลิตภัณฑ์ที่สดใหม่ถึงมือลูกค้าอย่างรวดเร็วและตรงเวลา
               </p>
             </li>
