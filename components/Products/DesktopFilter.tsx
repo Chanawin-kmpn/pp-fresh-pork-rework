@@ -24,6 +24,7 @@ const DesktopFIlter: React.FC<ProductFilterProps> = ({
                     id={type}
                     checked={selectedTypes === type}
                     onCheckedChange={() => handleTypeChange!(type)}
+                    aria-label={`${type} filter`}
                   />
                   {type}
                 </label>

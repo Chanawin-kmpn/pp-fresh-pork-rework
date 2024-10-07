@@ -29,20 +29,21 @@ export default function ProductDetail() {
   }
 
   return (
-    <div className="space-y-4 px-8 py-4 lg:space-y-8 lg:px-40 lg:py-16">
+    <div className="space-y-4 px-8 py-4 md:px-20 md:py-12 lg:space-y-8 lg:px-40 lg:py-16">
       <ProductBreadcrumb
         productId={productId}
         productName={product.product_name}
       />
       <div className="flex flex-col gap-4 lg:flex-row lg:gap-8">
-        <div className="relative h-[468px] w-full lg:flex-1">
+        <div className="relative h-80 max-h-[468px] w-full max-w-[544px] self-center lg:h-[468px] lg:grow lg:basis-[544px]">
           <Image
             src={product.product_image}
             fill
             alt={`${product.product_name} Image`}
+            className="object-contain"
           />
         </div>
-        <div className="flex flex-col gap-4 lg:flex-1">
+        <div className="flex min-w-[250px] flex-col gap-4 lg:shrink-[9999] lg:grow">
           <div className="space-y-2">
             <p className="text-subtitle text-primary">{product.product_name}</p>
             <p className="text-normal">{product.description}</p>
