@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# P.P Freshpork Website 
 
-## Getting Started
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/399b31da-4727-4daa-9554-01be5d39a49f" alt="P.P. Freshpork Logo" title="P.P. Freshpork"/>
+</div>
 
-First, run the development server:
+## Demo
+[Live Demo](https://pp-fresh-pork-rework.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## About Project
+P.P Freshpork is a family business website development project aimed at enhancing product accessibility and building trust between customers and the company
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Objectives
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Create a user-friendly online platform for customers to access product information
+- Establish a strong digital presence to increase brand credibility
+- Improve customer service through digital channels
+- Expand market reach
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Web Stack Overview
 
-## Learn More
+The P.P Freshpork website is developed with modern technologies to deliver the best user experience, high performance, and fast rendering.
 
-To learn more about Next.js, take a look at the following resources:
+### Technologies we've used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<div >
+	<img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/next_js.png" alt="Next.js" title="Next.js"/>
+	<img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/typescript.png" alt="TypeScript" title="TypeScript"/>
+	<img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/tailwind_css.png" alt="Tailwind CSS" title="Tailwind CSS"/>
+	<img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/shadcn_ui.png" alt="ShadCn UI" title="ShadCn UI"/>
+	<img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/figma.png" alt="Figma" title="Figma"/>
+	<img width="50" src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/git.png" alt="Git" title="Git"/>
+</div>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Results
+This project has created a new website that:
 
-## Deploy on Vercel
+- Has a modern image reflecting brand values
+- Significantly improved loading speed
+- Supports usage across various device types
+- Provides convenient and easy access to product information
+- Has a strong technical foundation for future development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Read More
+**[Full project summary](https://chanawin-portfolio.vercel.app/projects/pp-freshpork)**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2025 Chanawin. All rights reserved.
