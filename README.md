@@ -1,4 +1,4 @@
-# P.P Freshpork Website 
+# P.P Freshpork Website
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/399b31da-4727-4daa-9554-01be5d39a49f" alt="P.P. Freshpork Logo" title="P.P. Freshpork"/>
@@ -10,12 +10,15 @@
 ## About Project
 P.P Freshpork is a family business website development project aimed at enhancing product accessibility and building trust between customers and the company
 
+![heroImage](https://github.com/user-attachments/assets/292128b6-0ff9-4149-a086-6f34ffb94553)
+
 ### Objectives
 
 - Create a user-friendly online platform for customers to access product information
 - Establish a strong digital presence to increase brand credibility
 - Improve customer service through digital channels
 - Expand market reach
+
 
 ## Web Stack Overview
 
@@ -42,6 +45,6 @@ This project has created a new website that:
 - Has a strong technical foundation for future development
 
 ## Read More
-**[Full project summary](https://chanawin-portfolio.vercel.app/projects/pp-freshpork)**
+**[View full project summary](https://chanawin-portfolio.vercel.app/projects/pp-freshpork)**
 
 © 2025 Chanawin. All rights reserved.
